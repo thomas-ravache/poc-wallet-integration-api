@@ -1,0 +1,6 @@
+@BM.B2BProvider.Presentation_HostAddress = http://localhost:5099
+
+GET {{BM.B2BProvider.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

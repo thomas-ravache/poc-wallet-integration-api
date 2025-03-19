@@ -20,7 +20,7 @@ public class B2BController : ControllerBase
     }
 
     [HttpPost("balance")]
-    public async Task<IActionResult> GetBalanceAsync([FromBody] GetBalanceCommand command)
+    public async Task<IActionResult> GetBalance([FromBody] GetBalanceCommand command)
     {
         BalanceResponseDto response = await _mediator.Send(command);
 
@@ -28,7 +28,7 @@ public class B2BController : ControllerBase
     }
 
     [HttpPost("debit")]
-    public async Task<IActionResult> Debit([FromBody] PerformDebitCommand command)
+    public async Task<IActionResult> PerformDebit([FromBody] PerformDebitCommand command)
     {
         TransferResponseDto response = await _mediator.Send(command);
 
@@ -36,7 +36,7 @@ public class B2BController : ControllerBase
     }
 
     [HttpPost("credit")]
-    public async Task<IActionResult> Credit([FromBody] PerformCreditCommand command)
+    public async Task<IActionResult> PerformCredit([FromBody] PerformCreditCommand command)
     {
         TransferResponseDto response = await _mediator.Send(command);
 
@@ -44,7 +44,7 @@ public class B2BController : ControllerBase
     }
 
     [HttpPost("cancel")]
-    public async Task<IActionResult> Cancel([FromBody] CancelTransactionCommand command)
+    public async Task<IActionResult> CancelTransaction([FromBody] CancelTransactionCommand command)
     {
         await _mediator.Send(command);
 

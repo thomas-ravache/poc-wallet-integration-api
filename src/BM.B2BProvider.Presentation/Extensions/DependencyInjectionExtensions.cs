@@ -1,5 +1,3 @@
-using BM.B2BProvider.Infrastructure.Factories;
-
 namespace BM.B2BProvider.Presentation.Extensions;
 
 public static class IoCExtensions

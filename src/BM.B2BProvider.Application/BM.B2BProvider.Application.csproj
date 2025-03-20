@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BM.B2BProvider.Domain\BM.B2BProvider.Domain.csproj" />
-    <ProjectReference Include="..\BM.B2BProvider.Infrastructure\BM.B2BProvider.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
